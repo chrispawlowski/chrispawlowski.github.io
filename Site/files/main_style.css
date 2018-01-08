@@ -8,6 +8,15 @@ a { color: inherit; text-decoration: none; }
 a img, a:hover img { border: none; }
 b, strong { font-weight: bold; }
 
+.wsite-menu-item {
+    color: rgba(255, 255, 255, 1) ;
+}
+
+.wsite-menu-item:hover {
+    color: rgba(255, 255, 255, .60) ;
+    transition: all 0.2s ease 0s;
+}
+
 h2 {
     color: #103E5B; 
     font-family: 'Oswald', sans-serif; 
@@ -73,10 +82,18 @@ blockquote:before { position: absolute; content: '\201C'; top: 0.75em; left: 0.5
     height: 50px;
     background:url(../imgs/icons/button.png) no-repeat ;
     border: none;
+    transition: all 0.3s ease 0s;
+    opacity: 0.75;
+}
+
+.button:hover{
+    background: url(../imgs/icons/button-hover.png) ;
+    opacity: 1;
 }
 
 .button:active {
     background:url(../imgs/icons/button-active.png) no-repeat ;
+    opacity: 1;
 
 }
 
@@ -172,7 +189,12 @@ body:not(.splash-page).full-width-off .wrapper { min-height: 100vh; background: 
     font-weight: 900 !important;
 }
 
-.footer-wrap .wsite-footer { max-width: 1366px; padding: 60px 40px; }
+.footer-wrap .wsite-footer { 
+    max-width: 1366px; 
+    padding: 5px 20px 20px 20px;
+    font-size: 75%;
+}
+
 .footer-wrap h2, .footer-wrap div.paragraph, .footer-wrap blockquote { margin: 0 auto 20px; }
 .footer-wrap h2, .footer-wrap p, .footer-wrap blockquote { margin: 0 auto 20px; }
 .footer-wrap h2 { font-size: 20px; }
@@ -193,7 +215,17 @@ body.sticky-nav-on.wsite-checkout-page .unite-header, body.sticky-nav-on.wsite-n
 body.splash-page .unite-header { background: transparent; color: #ffffff; }
 body.splash-page .unite-header .nav li.active > a:after { background-color: rgba(255,255,255,0.6); }
 body.splash-page .unite-header .hamburger span, body.splash-page .unite-header .hamburger span:before, body.splash-page .unite-header .hamburger span:after { background: #ffffff; }
-.unite-header .logo { width: 25%; text-align: center; display: table-cell; padding-bottom:.5em; vertical-align: middle; max-height: 80px; overflow: hidden; }
+
+.unite-header .logo { 
+    width: 25%; 
+    text-align: center; 
+    display: table-cell; 
+    padding-bottom:.5em; 
+    vertical-align: middle; 
+    max-height: 80px; 
+    overflow: hidden;
+    padding-top: .9em;
+}
 .unite-header .logo * { display: block; margin: auto; }
 .unite-header .logo a { margin-right: 30px; }
 .unite-header .logo a:hover { opacity: 0.6; background: transparent; -webkit-transition: opacity 200ms ease; -moz-transition: opacity 200ms ease; -ms-transition: opacity 200ms ease; transition: opacity 200ms ease; }
