@@ -8,6 +8,10 @@
     background-position:50% 25%;
 }
 
+.container button {
+    margin: 9.5em .5em 0em .5em;
+}
+
 #pg494143954815929470 {
     margin-right: .5em;
 }
@@ -16,7 +20,7 @@
     width: 100%; 
     background: #ffffff;
     display:grid;
-    grid-template-rows: 175px 400px 390px 300px 600px 400px 250px 390px ;
+    grid-template-rows: 175px 400px 390px 400px 600px 400px 325px 390px ;
     grid-template-columns: repeat(5, 1fr);
     text-align: center;
 }
@@ -152,11 +156,15 @@ div.serviceicon {
 
 .s3 h2 {
     color: #fff;
-    padding-top: 3em;
+    padding-top: 1em;
 }
 
 .s3 h3 {
     margin-top: -.4em;
+}
+
+.s3 button {
+    margin-top: 9em;
 }
 
 .s4 {
@@ -169,13 +177,21 @@ div.serviceicon {
     max-height: 100px;
     max-width: 150px;
     text-align: center;
-    margin: 4em .5em ;
+    margin: 2em 2.5em ;
 }
 
 .s5 {
     grid-row: 5/6;
     grid-column: 1/6 ;
     background-color: #EBEBEB;
+}
+
+.s5 a {
+    color:#2CA6D9;
+}
+
+.s5 a:hover {
+    color: #1E6B87;
 }
 
 .timeline {
@@ -269,8 +285,6 @@ div.serviceicon {
     grid-column: 4/5;
     vertical-align: top;
     margin: 0em 1.85em;
-
-
 }
 
 .s7 {
@@ -280,10 +294,10 @@ div.serviceicon {
 }
 
 .s7 img {
-    max-height: 125px;
-    max-width: 175px;
+    max-height: 100px;
+    max-width: 150px;
     text-align: center;
-    margin: 4em .5em ;
+    margin: 2em 3.5em ;
 }
 
 .s8 {
@@ -297,11 +311,11 @@ div.serviceicon {
 
 .s8 h2 {
     color: #fff;
-    padding-top: 3em;
+    padding-top: 1em;
 }
 
 .s8 button {
-    margin-top: 2em;
+    margin-top: 6.5em;
 }
 
 .s8 h3 {

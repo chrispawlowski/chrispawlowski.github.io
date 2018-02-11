@@ -5,8 +5,6 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
         <link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
         <link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
         <link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
@@ -85,6 +83,34 @@
         //-->
         </script>
 
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) { 
+
+
+                var acc = document.getElementsByClassName("accordion");
+                var panel = document.getElementsByClassName('panel');
+
+                for (var i = 0; i < acc.length; i++) {
+                    acc[i].onclick = function() {
+                        var setClasses = !this.classList.contains('active');
+                        setClass(acc, 'active', 'remove');
+                        setClass(panel, 'show', 'remove');
+
+                        if (setClasses) {
+                            this.classList.toggle("active");
+                            this.nextElementSibling.classList.toggle("show");
+                        }
+                    }
+                }
+
+                function setClass(els, className, fnName) {
+                    for (var i = 0; i < els.length; i++) {
+                        els[i].classList[fnName](className);
+                    }
+                }
+
+            });
+        </script>
 
     </head>
     <body class="translation header-page  wsite-page-index  sticky-nav-off full-width-on header-scroll-animate-off  wsite-theme-light"><div class="wrapper">
@@ -241,6 +267,8 @@
         <div class="banner-wrap">
             <div class="container">
                 <div class="paragraph">translation, <br />when you need it</div>
+                <a href="contact.html"><button class="button" href="contact.html">Submit a Job</button></a>
+                <a href="brandeis.qualtrics.com/jfe/form/SV_3UYFGvHDWrn6mlT"><button class="button" href="brandeis.qualtrics.com/jfe/form/SV_3UYFGvHDWrn6mlT">Become a Worker</button></a>
             </div>
         </div>
 
@@ -251,214 +279,229 @@
                     We choose translators who have experience in subject area of the document that needs translating in order to ensure that technical terms and concepts are correctly translated. <br />
                     Choose the style of writing you need, and specify terms you don’t want translated. Allow 48 hours. Rush services add $2/hour.</p></div></div>
 
-            <div class="s2"><h2>Case Study</h2><img src="imgs/logos/Brandeis-logo.png"><h4>“Here is where a quote from the Cohen Ethics Center would go
-                explaining how Workaround helped improve their organization.”</h4><p>John Doe President of Cohen Ethics Center</p></div>
+            <div class="s2"><h2>Case Study</h2><img src="imgs/logos/Brandeis-logo.png"><h4>“It was a pleasure to work with WorkAround. The process was efficient, the cost was reasonable, and quality control was assured. We were so pleased with the translation of the toolkit we turned to WorkAround again to translate the executive summary of a report on a design lab planning the future of Aleppo”</h4><p>-Cynthia Cohen, <i>Director of Programs in Peacebuilding and the Arts</i></p></div>
 
-                <div class="s3"><h2>FAQ</h2><h3>About Our Services:</h3>
-                    <ul class=footer>
-                        <li>Can you do things not listed on the services page?</li>
-                        <li>How do you ensure quality?</li>
-                        <li>How long will it take?</li>
-                        <li>How does payment work?</li>
-                        <li>What if I’m not satisfied?</li>
-                    </ul></div>
+            <div class="s3"><h2>FAQ</h2><h3>About Our Services:</h3>
 
-                <div class="s4"><h3>About Our Workers:</h3>
-                    <ul>
-                        <li>Who works for you?</li>
-                        <li>How much do you pay your workers?</li>
-                        <li>How do workers get paid?</li>
-                        <li>How do you ensure that your workers are paid fairly?</li>
-                    </ul>
+                <p class="accordion">Can you do things not listed on the services page?</p>
+                <div class="panel">Yes! We specialize in customized solutions for our customers. If you have a need that matches the skill set of our workers, we can do it!
                 </div>
 
-                <div class="s5"><h2>The Workaround Difference</h2>
-                    <div class="difference1"><img src="imgs/icons/translation-english.png">
-                        <h4>Arabic to English</h4><p>WorkAround are the leading providers of both Arabic to English and English to Arabic translations.</p></div>
-                    <div class="difference2"><img src="imgs/icons/education.png">
-                        <h4>Educated Team</h4><p>All translators at Workaround have master’s degrees or higher in their field.</p></div></div>
+                <p class="accordion">How do you ensure quality?</p>
+                <div class="panel">We have a three step process to quality control. The first is pre-qualification. Each worker does a series of test tasks. If done with complete accuracy they are then qualified to do that particular task. The second is in-task training. The first few tasks in any new job are monitored. If a worker is not completing them correctly, they are given feedback and asked to correct their mistakes and try again. The monitoring continues until they have completed several tasks in a row successfully. The third is peer review. For some jobs the task are given to two different workers and the answers are compared.  If the answers do not match, that task is flagged for review.
+                </div>
 
-                    <div class="s6"><h2>Interested in getting a translation?</h2><a href="contact.html"><button class="button" href="contact.html">Contact Us</button></a></div>
-                
+                <p class="accordion">How long will it take?</p>
+                <div class="panel">Turn around times vary by project. Most jobs can be completed in 24-48 hours.</div>
+
+                <p class="accordion">How does payment work?</p>
+                <div class="panel">When your work is completed, we will send you an invoice, which you can pay by check, transfer, or credit card.</div>
+
+                <p class="accordion">What if I’m not satisfied?</p>
+                <div class="panel">We are committed to quality. If you are not satisfied with your job, we will redo the incorrect items free of charge.</div>   
             </div>
 
-            <div class="footer-wrap">
-                <ul class="footer-about">
-                    <li class="footer-bold">About Us</li>
-                    <li>Our Team</li>
-                    <li>Mission</li>
-                    <li>Services</li>
-                    <li>Blog</li>
-                </ul>
+            <div class="s4"><h2>FAQ</h2><h3>About Our Workers:</h3>
+                <p class="accordion">Who works for you?</p>
+                <div class="panel">Everyone who registers on our site is first checked against the list of blocked persons compiled by the US Office of Foriegn Asset Control (OFAC) to ensure we are not working with any known terrorist.  Although our recruitment efforts are targeted toward refugees, anyone who is not on this list and passes our skills qualification screening can work on our platform.
+                </div>
 
-                <ul class="footer-services">
-                    <li class="footer-bold">Services</li>
-                    <li>FAQ</li>
-                    <li>Case Studies</li>
-                    <li>Pricing</li>
-                </ul>
+                <p class="accordion">How much do you pay your workers?</p>
+                <div class="panel">We are very conscious of paying a fair wage, therefore our wages vary by country.  We determine an hourly rate by starting with the government established minimum wage for that country, then looking at the living wage index and price parity index to establish an average wage for that country. Certain tasks like translation, research, and transcription have higher wage rates.
+                </div>
 
-                <ul class="footer-contact">
-                    <li class="footer-bold">Contact</li>
-                    <li>info@workaroundonline.com</li>
-                    <li>413-770-0658</li>
-                </ul>
-                <div class="footer"><div class='wsite-elements wsite-footer'>Site powered by Weebly. Managed by <a href="https://www.siteground.com" target="_blank">SiteGround</a></div></div>
+                <p class="accordion">How do workers get paid?</p>
+                <div class="panel">Many of our workers do not have bank accounts.  In these cases, we use a variety of solutions, ranging from paying to top up “airtime” on cell phone accounts, mobile money payments, wire transfers, and prepaid reloadable gift cards.  
+                </div>
             </div>
 
-            <div class="nav mobile-nav">
-                <label class="hamburger"><span></span></label>
-                <ul class="wsite-menu-default">
-                    <li id="active" class="wsite-menu-item-wrap">
-                        <a
-                           href="index.html"
-                           class="wsite-menu-item"
-                           >
-                            Home
-                        </a>
+            <div class="s5"><h2>The Workaround Difference</h2>
+                <div class="difference1"><img src="imgs/icons/translation-english.png">
+                    <h4>Arabic to English</h4><p>WorkAround are the leading providers of both Arabic to English and English to Arabic translations.</p></div>
+                <div class="difference2"><img src="imgs/icons/education.png">
+                    <h4>Educated Team</h4><p>All translators at Workaround have master’s degrees or higher in their field.</p></div></div>
 
-                    </li>
-                    <li id="pg214337401656226092" class="wsite-menu-item-wrap">
-                        <a
-                           href="about.html"
-                           class="wsite-menu-item"
-                           >
-                            About
-                        </a>
-                        <div class="wsite-menu-wrap" style="display:none">
-                            <ul class="wsite-menu">
-                                <li id="wsite-nav-691944611592194134"
-                                    class="wsite-menu-subitem-wrap "
-                                    >
-                                    <a
-                                       href="who-we-are.html"
-                                       class="wsite-menu-subitem"
-                                       >
-                                        <span class="wsite-menu-title">
-                                            Who We Are
-                                        </span>
-                                    </a>
+            <div class="s6"><h2>Interested in getting a translation?</h2><a href="contact.html"><button class="button" href="contact.html">Contact Us</button></a></div>
 
-                                </li>
-                                <li id="wsite-nav-626518901184541183"
-                                    class="wsite-menu-subitem-wrap "
-                                    >
-                                    <a
-                                       href="news-and-events.html"
-                                       class="wsite-menu-subitem"
-                                       >
-                                        <span class="wsite-menu-title">
-                                            News and Events
-                                        </span>
-                                    </a>
+        </div>
 
-                                </li>
+        <div class="footer-wrap">
+            <ul class="footer-about">
+                <li class="footer-bold">About Us</li>
+                <li><a href="about.html#teamhead">Our Team</a></li>
+                <li><a href="about.html#mission">Mission</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li>Blog</li>
+            </ul>
 
-                            </ul>
-                        </div>
+            <ul class="footer-services">
+                <li class="footer-bold">Services</li>
+                <li>FAQ</li>
+                <li>Case Studies</li>
+                <li>Pricing</li>
+            </ul>
 
-                    </li>
-                    <li id="pg467503879942918099" class="wsite-menu-item-wrap">
-                        <a
-                           href="services.html"
-                           class="wsite-menu-item"
-                           >
-                            Services
-                        </a>
-                        <div class="wsite-menu-wrap" style="display:none">
-                            <ul class="wsite-menu">
-                                <li id="wsite-nav-818276802462158650"
-                                    class="wsite-menu-subitem-wrap "
-                                    >
-                                    <a
-                                       href="translation.html"
-                                       class="wsite-menu-subitem"
-                                       >
-                                        <span class="wsite-menu-title">
-                                            Translation
-                                        </span>
-                                    </a>
+            <ul class="footer-contact">
+                <li class="footer-bold">Contact</li>
+                <li>info@workaroundonline.com</li>
+                <li>413-770-0658</li>
+            </ul>
+            <div class="footer"><div class='wsite-elements wsite-footer'>Site powered by Weebly. Managed by <a href="https://www.siteground.com" target="_blank">SiteGround</a></div></div>
+        </div>
 
-                                </li>
-                                <li id="wsite-nav-593658965483601221"
-                                    class="wsite-menu-subitem-wrap "
-                                    >
-                                    <a
-                                       href="image-tagging.html"
-                                       class="wsite-menu-subitem"
-                                       >
-                                        <span class="wsite-menu-title">
-                                            Image Tagging
-                                        </span>
-                                    </a>
+        <div class="nav mobile-nav">
+            <label class="hamburger"><span></span></label>
+            <ul class="wsite-menu-default">
+                <li id="active" class="wsite-menu-item-wrap">
+                    <a
+                       href="index.html"
+                       class="wsite-menu-item"
+                       >
+                        Home
+                    </a>
 
-                                </li>
-                                <li id="wsite-nav-719377313787663989"
-                                    class="wsite-menu-subitem-wrap "
-                                    >
-                                    <a
-                                       href="data-entry.html"
-                                       class="wsite-menu-subitem"
-                                       >
-                                        <span class="wsite-menu-title">
-                                            Data Entry
-                                        </span>
-                                    </a>
+                </li>
+                <li id="pg214337401656226092" class="wsite-menu-item-wrap">
+                    <a
+                       href="about.html"
+                       class="wsite-menu-item"
+                       >
+                        About
+                    </a>
+                    <div class="wsite-menu-wrap" style="display:none">
+                        <ul class="wsite-menu">
+                            <li id="wsite-nav-691944611592194134"
+                                class="wsite-menu-subitem-wrap "
+                                >
+                                <a
+                                   href="who-we-are.html"
+                                   class="wsite-menu-subitem"
+                                   >
+                                    <span class="wsite-menu-title">
+                                        Who We Are
+                                    </span>
+                                </a>
 
-                                </li>
-                                <li id="wsite-nav-716001236617936143"
-                                    class="wsite-menu-subitem-wrap "
-                                    >
-                                    <a
-                                       href="transcription.html"
-                                       class="wsite-menu-subitem"
-                                       >
-                                        <span class="wsite-menu-title">
-                                            Transcription
-                                        </span>
-                                    </a>
+                            </li>
+                            <li id="wsite-nav-626518901184541183"
+                                class="wsite-menu-subitem-wrap "
+                                >
+                                <a
+                                   href="news-and-events.html"
+                                   class="wsite-menu-subitem"
+                                   >
+                                    <span class="wsite-menu-title">
+                                        News and Events
+                                    </span>
+                                </a>
 
-                                </li>
+                            </li>
 
-                            </ul>
-                        </div>
+                        </ul>
+                    </div>
 
-                    </li>
-                    <li id="pg547045926433125489" class="wsite-menu-item-wrap">
-                        <a
-                           href="workers.html"
-                           class="wsite-menu-item"
-                           >
-                            Workers
-                        </a>
+                </li>
+                <li id="pg467503879942918099" class="wsite-menu-item-wrap">
+                    <a
+                       href="services.html"
+                       class="wsite-menu-item"
+                       >
+                        Services
+                    </a>
+                    <div class="wsite-menu-wrap" style="display:none">
+                        <ul class="wsite-menu">
+                            <li id="wsite-nav-818276802462158650"
+                                class="wsite-menu-subitem-wrap "
+                                >
+                                <a
+                                   href="translation.html"
+                                   class="wsite-menu-subitem"
+                                   >
+                                    <span class="wsite-menu-title">
+                                        Translation
+                                    </span>
+                                </a>
 
-                    </li>
-                    <li id="pg494143954815929470" class="wsite-menu-item-wrap">
-                        <a
-                           href="contact.html"
-                           class="wsite-menu-item"
-                           >
-                            CONTACT
-                        </a>
+                            </li>
+                            <li id="wsite-nav-593658965483601221"
+                                class="wsite-menu-subitem-wrap "
+                                >
+                                <a
+                                   href="image-tagging.html"
+                                   class="wsite-menu-subitem"
+                                   >
+                                    <span class="wsite-menu-title">
+                                        Image Tagging
+                                    </span>
+                                </a>
 
-                    </li>
-                </ul>
-            </div>
+                            </li>
+                            <li id="wsite-nav-719377313787663989"
+                                class="wsite-menu-subitem-wrap "
+                                >
+                                <a
+                                   href="data-entry.html"
+                                   class="wsite-menu-subitem"
+                                   >
+                                    <span class="wsite-menu-title">
+                                        Data Entry
+                                    </span>
+                                </a>
 
-            <script>
-                (function(d) {
-                    var config = {
-                        kitId: 'nxe1ajf',
-                        scriptTimeout: 3000,
-                        async: true
-                    },
-                        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-                })(document);
-            </script>
+                            </li>
+                            <li id="wsite-nav-716001236617936143"
+                                class="wsite-menu-subitem-wrap "
+                                >
+                                <a
+                                   href="transcription.html"
+                                   class="wsite-menu-subitem"
+                                   >
+                                    <span class="wsite-menu-title">
+                                        Transcription
+                                    </span>
+                                </a>
 
-            <script type="text/javascript" src="files/theme/plugins.js"></script>
-            <script type="text/javascript" src="files/theme/custom.js"></script>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </li>
+                <li id="pg547045926433125489" class="wsite-menu-item-wrap">
+                    <a
+                       href="workers.html"
+                       class="wsite-menu-item"
+                       >
+                        Workers
+                    </a>
+
+                </li>
+                <li id="pg494143954815929470" class="wsite-menu-item-wrap">
+                    <a
+                       href="contact.html"
+                       class="wsite-menu-item"
+                       >
+                        CONTACT
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+
+        <script>
+            (function(d) {
+                var config = {
+                    kitId: 'nxe1ajf',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+        </script>
+
+        <script type="text/javascript" src="files/theme/plugins.js"></script>
+        <script type="text/javascript" src="files/theme/custom.js"></script>
 
 
-            </body>
-        </html>
+    </body>
+</html>
