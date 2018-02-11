@@ -8,6 +8,10 @@
     background-position:50% 25%;
 }
 
+.container button {
+    margin: 9.5em .5em 0em .5em;
+}
+
 .main-wrap { 
     width: 100%; 
     background: #ffffff;

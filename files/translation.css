@@ -8,11 +8,15 @@
     background-position:50% 25%;
 }
 
+.container button {
+    margin: 9.5em .5em 0em .5em;
+}
+
 .main-wrap { 
     width: 100%; 
     background: #ffffff;
     display:grid;
-    grid-template-rows: 350px 235px 1fr 1fr 425px 390px ;
+    grid-template-rows: 350px 280px 1fr 400px 425px 390px ;
     grid-template-columns: repeat(5, 1fr);
     text-align: center;
 }
@@ -61,6 +65,7 @@
 
 .s2 h4 {
         margin-top: 1em;
+        line-height: 1.75em;
 }
 
 .s3 {
@@ -78,15 +83,6 @@
     padding-bottom: 1em;
 }
 
-.s3 li {
-    display: block;
-    text-align: left;
-    padding: 1.5em ;
-    color: #103E5B ;
-    background: url(../imgs/icons/button-white.png) no-repeat;
-    
-}
-
 .s4 {
     grid-row: 4/5 ;
     grid-column: 1/6 ;
@@ -94,17 +90,66 @@
     padding: 1.5em;
 }
 
-.s4 li {
-    display: block;
-    text-align: left;
-    padding: 1.5em ;
-    color: #103E5B ;
-    background: url(../imgs/icons/button-white.png) no-repeat;
+.s4 h2 {
+    margin: 0em;
 }
 
 .s4 h3 {
-    margin-top: 1em  ;
-    margin: 1em;
+    padding-bottom: 1em;
+}
+
+/* Style the element that is used to open and close the accordion class */
+p.accordion {
+    background-color: #e0e0e0;
+    color: #444;
+    cursor: pointer;
+    padding: 10px 0px 10px 5px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom:10px;
+    border-radius: 5px;
+}
+
+/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+p.accordion.active, p.accordion:hover {
+    background-color: #c0c0c0;
+}
+
+/* Unicode character for "plus" sign (+) */
+p.accordion:after {
+    content: '\2795'; 
+    font-size: 13px;
+    color: #2CA6D9;
+    float: right;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+/* Unicode character for "minus" sign (-) */
+p.accordion.active:after {
+    content: "\2796"; 
+}
+
+/* Style the element that is used for the panel class */
+
+div.panel {
+    padding: 5px 0 5px 5px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
 }
 
 .s5 {
