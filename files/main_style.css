@@ -17,6 +17,15 @@ b, strong { font-weight: bold; }
     transition: all 0.2s ease 0s;
 }
 
+#pg494143954815929470 .wsite-menu-item {
+    color:#2AA6DB;
+}
+
+#pg494143954815929470 .wsite-menu-item:hover {
+    color: rgba(41, 166, 219, .60) ;
+    transition: all 0.2s ease 0s;
+}
+
 h2 {
     color: #103E5B; 
     font-family: 'Oswald', sans-serif; 
@@ -249,7 +258,7 @@ body.splash-page .unite-header .hamburger span, body.splash-page .unite-header .
     width: 25%; 
     text-align: center; 
     display: table-cell; 
-    padding-bottom:.5em; 
+    padding-bottom:1.15em; 
     vertical-align: middle; 
     max-height: 80px; 
     overflow: hidden;
@@ -513,3 +522,4 @@ h2#wsite-com-product-title { display: block; clear: both; font-size: 20px; font-
     #wsite-com-checkout-list tbody td:first-child, #wsite-com-checkout-summary-list tbody td:first-child { width: 0; padding: 0; }
     #wsite-com-checkout-list .wsite-com-checkout-item-details-inner, #wsite-com-checkout-summary-list .wsite-com-checkout-item-details-inner { padding-left: 0; }
 }
+
